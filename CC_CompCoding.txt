@@ -1,0 +1,116 @@
+
+Name: Yatharth Singh
+ID: 2022A7PS0146
+
+Codeforces problem from a contest:
+
+1.  Elephant Problem
+
+//Pseudo Code:
+float x = input ("X coordinate");
+int steps = x/5;
+if (x/5-int(x/5) != 0): steps += 1;
+
+print(steps);
+
+2.  Sum Square Difference
+
+//Pseudo Code:
+int t = input("test cases");
+
+for k in range(t): {
+
+n = []
+for i in range (t):
+    n.append(input ("N"));
+
+for i in n:
+    print((i^2*(i+1)^2/4)-n*(n+1)*(2n+1)/6);
+
+}
+
+3.  Weird Algorithm
+
+//Psuedo Code:
+
+int n = input("enter n";)
+    print(n, end=' ');
+    while (n != 1):
+        if (n%2==0): n=n/2;
+        else:        n=n*3+1;
+    print(n);
+
+4. Beautiful Array
+
+//Psuedo Code:
+
+int t = input ("Test Cases");
+for k in range(t): {
+    flag = "YES";
+    int n = int(input("Length"));
+    arr = input("Enter the array: ").split(" ");
+    for (int i=0, i < n-1, i++)):
+        {
+            for (int j=i+1, j<n, j++):
+                if ((i/j)%1.0!=0): flag = "NO";
+         
+        }
+    print(flag);
+}
+
+
+
+5. Sum of Two Values
+
+//Psuedo Code:
+
+I1 = input ("Array length and desired sum: ");
+I2 = input ("Array");
+
+len_sum = I1.split();
+int n = len_sum[0];
+int x = len_sum[1];
+
+Arr = I2.split();
+
+flag = false;
+for (i=0, i<n-1 && flag==-1, i++):
+    for (j=i+1, j<n, j++):
+        {
+            int a = int(Arr[i]), b = int(Arr[j]);
+        if (a+b==x): flag=true; 
+        }
+if (flag == true): print("YES");
+else: print("NO")l
+
+
+
+6. Zarxer's Restaurant
+
+//Psuedo Code:
+
+I1 = input ("N, X, Y");
+I2 = input ("String");
+
+len_price = I1.split();
+int n = len_price[0];
+int x = len_price[1];
+int y = len_price[2];
+
+AB = [*I2]
+
+int alice = 0, bob = 0;
+int i;
+for (i = 0, i<n, i++): 
+    {
+        if (AB[i]=='A'): alice += x;
+        else: {
+            i++;
+            if(AB[i]=='A'): bob += x + y;
+            else: bob += y + y;
+        }
+    }
+print(alice, bob)
+
+
+
